@@ -8,20 +8,25 @@
 
     <style>
         body {
+            width: 100%;
             display: flex;
             flex-direction: column;
             background: transparent;
-            color:whitesmoke;
+            background-image: url(images/tamara_lopez.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            color:rgb(214, 59, 59);
+            margin: 0;
         }
         nav {
             display: flex;
-            height: 10%;
+            height: 15%;
             width: 100%;
-            background: white;
+            background: transparent;
             flex-direction: column;
             align-content: center;
             font-weight: 700;
-            position:absolute;
+            margin: 20px;
         }
         div {
             text-align: center;
@@ -31,9 +36,16 @@
             text-decoration-style: none;
             text-decoration-line: none;
         }
-        img {
-            height: 100%;
-            width: 10%;
+        a:hover {
+            color: darkgray;
+        }
+        .logo {
+            height: 40px;
+            width: 40px;
+        }
+        .backpage{
+            height: 10%;
+
         }
         ul {
             padding: 0%;
@@ -41,15 +53,15 @@
             flex-flow: row wrap;
             justify-content: space-evenly;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
+            background-color: transparent;
             text-transform: uppercase;
             list-style: none;
-            text-decoration-style: none;
+            text-decoration-line: none;
+            color: black;
         }
-        section {
-            height: 720px;
-            width: 1080px;
-            background-image: url(images/tamara_lopez.jpg);
+        .home {
+            height: 100%;
+            width: 100%;
         }
 
         
@@ -59,7 +71,7 @@
     <nav>
         <div>
             <a href="hugomateo_home.html">
-                <img src="images/logo_hm1.png" alt="logo">
+                <img class="logo" src="images/logo_hm1.png" alt="logo">
             </a>
         </div>
         <ul>
@@ -80,8 +92,24 @@
             </li>
         </ul>
     </nav>
-    <section>
-
+    <section class="hm-home">
+        Sesión de foto-retratos ambientados con producción y edición
     </section>
+    <div class="hm-services">
+        Fotografía 
+        Edición y procesamiento de imágenes
+        Videografía
+    </div>
+    <div class="hm-gallery">
+        Galería
+            Modelos
+    </div>
+    <div class="hm-instagram">
+
+    </div>
+    <footer class="hm-footer"> 
+
+    </footer>
+
 </body>
 </html>
