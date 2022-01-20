@@ -8,27 +8,42 @@
 
     <style>
         body {
-            width: 100%;
             display: flex;
             flex-direction: column;
-            background: transparent;
-            background-image: url(images/tamara_lopez.jpg);
-            background-repeat: no-repeat;
-            background-position: top;
-            color:rgb(214, 59, 59);
+            justify-content: center;
+
+            width: 100%;
             margin: 0;
         }
-        nav {
+        .nav-container {
+            margin: 0;
             display: flex;
-            height: 15%;
+
+            height: 15vh;
             width: 100%;
-            background: transparent;
+
+            font-weight: 700;
+            
+            color: darkgrey;
             flex-direction: column;
             align-content: center;
-            font-weight: 700;
-            margin: 20px;
         }
+        .home {
+            height: 85vh;
+            width: 100%;
+        }
+        .container {
+            height: 70vh;
+            width: 100%;
+        }
+        footer {
+            height: 30vh;
+            width: 100%;
+        }
+
+
         div {
+
             text-align: center;
         }
         a {
@@ -43,12 +58,8 @@
             height: 40px;
             width: 40px;
         }
-        .backpage{
-            height: 10%;
-
-        }
         ul {
-            padding: 0%;
+            padding: 0;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-evenly;
@@ -59,56 +70,53 @@
             text-decoration-line: none;
             color: black;
         }
-        .home {
-            height: 100%;
-            width: 100%;
-        }
+        
 
         
     </style>
 </head>
 <body>
-    <nav>
+    <nav class="nav-container">
         <div>
             <a href="hugomateo_home.html">
                 <img class="logo" src="images/logo_hm1.png" alt="logo">
             </a>
+            <ul>
+                <li>
+                    <a href="hugomateo_home.html">Inicio</a>
+                </li>
+                <li>
+                    <a>Galería</a>
+                </li>
+                <li>
+                    <a>Servicios</a>
+                </li>
+                <li>
+                    <a>Acerca de mi</a>
+                </li>
+                <li>
+                    <a>Contacto</a>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li>
-                <a href="hugomateo_home.html">Inicio</a>
-            </li>
-            <li>
-                <a>Galería</a>
-            </li>
-            <li>
-                <a>Servicios</a>
-            </li>
-            <li>
-                <a>Acerca de mi</a>
-            </li>
-            <li>
-                <a>Contacto</a>
-            </li>
-        </ul>
     </nav>
-    <section class="hm-home">
-        Sesión de foto-retratos ambientados con producción y edición
+    <section class="home">
+        Sesión de foto-retratos ambientados con producción y edición.
     </section>
-    <div class="hm-services">
+    <div class="container">
         Fotografía 
         Edición y procesamiento de imágenes
         Videografía
     </div>
-    <div class="hm-gallery">
+    <div class="container">
         Galería
             Modelos
     </div>
-    <div class="hm-instagram">
-
+    <div class="container">
+        Seguíme en Instagram
     </div>
-    <footer class="hm-footer"> 
-
+    <footer class="footer"> 
+        Envíame un WPP
     </footer>
 
 </body>
