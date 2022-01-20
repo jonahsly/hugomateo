@@ -12,25 +12,67 @@
             flex-direction: column;
             justify-content: center;
 
-            width: 100%;
+            width: 100vw;
             margin: 0;
+        }
+        .header {
+            margin: 0;
+
+            background-image: url(images/tamara_lopez.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+
         }
         .nav-container {
-            margin: 0;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
+            margin: 0;
             height: 15vh;
             width: 100%;
-
-            font-weight: 700;
-            
-            color: darkgrey;
-            flex-direction: column;
-            align-content: center;
+            background-color: rgba(18, 18, 18, 0.3);
         }
-        .home {
+        .nav-logo {
+            margin: 5px;
+            height: 40px;
+            width: 40px;
+            
+        }
+        .nav-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            
+            margin: 5px;
+            width: 100%;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            list-style: none;
+        }
+        a {
+            text-decoration-style: none;
+            text-decoration-line: none;
+            color: black;
+        }
+       .home {
+            display: grid;
+            place-items: center;
+
             height: 85vh;
             width: 100%;
+
+            font-family: "Josefin Sans", Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-shadow: darkslategrey;
+            color: white;
         }
         .container {
             height: 70vh;
@@ -40,48 +82,21 @@
             height: 30vh;
             width: 100%;
         }
-
-
-        div {
-
-            text-align: center;
-        }
         a {
-            color: rgb(17, 15, 15);
-            text-decoration-style: none;
-            text-decoration-line: none;
+            
         }
         a:hover {
             color: darkgray;
         }
-        .logo {
-            height: 40px;
-            width: 40px;
-        }
-        ul {
-            padding: 0;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: transparent;
-            text-transform: uppercase;
-            list-style: none;
-            text-decoration-line: none;
-            color: black;
-        }
-        
-
-        
     </style>
 </head>
 <body>
-    <nav class="nav-container">
-        <div>
+    <header class="header">
+        <nav class="nav-container">
             <a href="hugomateo_home.html">
-                <img class="logo" src="images/logo_hm1.png" alt="logo">
+                <img class="nav-logo" src="images/logo_hm1.png" alt="logo">
             </a>
-            <ul>
+            <ul class="nav-list">
                 <li>
                     <a href="hugomateo_home.html">Inicio</a>
                 </li>
@@ -98,11 +113,11 @@
                     <a>Contacto</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <section class="home">
-        Sesión de foto-retratos ambientados con producción y edición.
-    </section>
+        </nav>    
+        <section class="home">
+            Sesión de foto-retratos ambientados con producción y edición
+        </section>
+    </header>
     <div class="container">
         Fotografía 
         Edición y procesamiento de imágenes
