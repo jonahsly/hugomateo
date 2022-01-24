@@ -15,6 +15,13 @@
             width: 100%;
             margin: 0;
         }
+        body div:nth-child(3) {
+            background-color: black;
+        }
+        body div:nth-child(4) {
+            height: 70vh;
+            width: 100%;
+        }
         .header {
             margin: 0;
 
@@ -77,13 +84,41 @@
             color: white;
         }
         .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            background-color: rgb(100, 0, 0);
+
             height: 100vh;
             width: 100%;
+        }
+        .service-box {
+            background: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+
+            height: 30vh;
+            width: 80vw;
+
         }
         .services-ico {
             height: 20vh;
             width: auto;
         }
+        .service-text {
+            width: 30vh;
+            margin-left: 1rem;
+
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.5rem;
+            color: lawngreen;
+        }
+
+
         footer {
             height: 30vh;
             width: 100%;
@@ -125,10 +160,7 @@
         </section>
     </header>
     <div class="container">
-        Fotografía 
-        Edición y procesamiento de imágenes
-        Videografía
-        <div>
+        <div class="service-box">
             <div>
                 <a href="">
                     <i>
@@ -136,23 +168,11 @@
                     </i>
                 </a>
             </div>
-            <div>
+            <div class="service-text">
                 Fotografía con Edición
             </div>
         </div>
-        <div>
-            <div>
-                <a href="">
-                    <i>
-                        <img class="services-ico" src="" alt="">
-                    </i>
-                </a>
-            </div>
-            <div>
-                Edición y procesamiento de imagenes
-            </div>
-        </div>
-        <div>
+        <div class="service-box">
             <div>
                 <a href="">
                     <i>
@@ -160,7 +180,7 @@
                     </i>
                 </a>
             </div>
-            <div>
+            <div class="service-text">
                 Videografía
             </div>
         </div>
