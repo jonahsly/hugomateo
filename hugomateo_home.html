@@ -18,17 +18,6 @@
             width: 100%;
             margin: 0;
         }
-        body div:nth-child(2) {
-            background-color: slategray;
-        }
-        body div:nth-child(3) {
-            background-color: #660708;
-        }
-        body div:nth-child(4) {
-            background-color: #f5f3f4;
-            height: 70vh;
-            width: 100%;
-        }
         .header {
             margin: 0;
 
@@ -102,16 +91,23 @@
             height: 100vh;
             width: 100%;
         }
+        #services {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            place-items: center;
+
+            background-color: #660708;
+        }
         .service-box {
             background-color: black;
             display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: center;
             border-radius: 1rem;
 
-            max-height: 30vh;
-            max-width: 80vw;
+            height: 25vh;
+            width: 45vw;
 
         }
         .services-ico {
@@ -127,15 +123,16 @@
             font-size: 1.5rem;
             color: lawngreen;
         }
-
+        #contact {
+            background-color: #f5f3f4;
+            height: 70vh;
+            width: 100%;
+        }
 
         footer {
             background-color: #161a1d;
             height: 30vh;
             width: 100%;
-        }
-        a {
-            
         }
         a:hover {
             color: darkgray;
@@ -184,7 +181,7 @@
                 </a>
             </div>
             <div class="service-text">
-                Fotografía con Edición
+                Emprendimientos
             </div>
         </div>
         <div class="service-box">
@@ -196,7 +193,31 @@
                 </a>
             </div>
             <div class="service-text">
-                Videografía
+                Marcas
+            </div>
+        </div>
+        <div class="service-box">
+            <div>
+                <a href="">
+                    <i>
+                        <img class="services-ico" src="images/video_icon.png" alt="">
+                    </i>
+                </a>
+            </div>
+            <div class="service-text">
+                Eventos
+            </div>
+        </div>
+        <div class="service-box">
+            <div>
+                <a href="">
+                    <i>
+                        <img class="services-ico" src="images/video_icon.png" alt="">
+                    </i>
+                </a>
+            </div>
+            <div class="service-text">
+                Particulares
             </div>
         </div>
     </div>
