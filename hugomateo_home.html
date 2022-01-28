@@ -21,13 +21,12 @@
         .header {
             margin: 0;
 
-            background-image: url(images/tamara_lopez.jpg);
+            background-image: url(images/valen_siladji.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             width: 100%;
-
         }
         .nav-container {
             display: flex;
@@ -38,7 +37,7 @@
             margin: 0;
             height: 15vh;
             width: 100%;
-            background-color: rgba(18, 18, 18, 0.3);
+            background-color: rgb(255, 255, 255, 0.1);
 
             position: fixed;
             top: 0%;
@@ -77,10 +76,30 @@
 
             font-family: "Josefin Sans", Arial, sans-serif;
             font-size: 25px;
-            font-weight: 400;
+            font-weight: 500;
             text-transform: uppercase;
             text-shadow: darkslategrey;
             color: white;
+        }
+        .slider {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        #gallery {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            height: 85vh;
+            width: 100%;
+            padding-top: 15vh;
+        }
+        .models {
+            height: 30vh;
+            width: auto;
         }
         .container {
             display: flex;
@@ -97,7 +116,10 @@
             flex-wrap: wrap;
             place-items: center;
 
-            background-color: #660708;
+            background-color: #ced4da;
+            height: 85vh;
+            width: 100%;
+            padding-top: 15vh;
         }
         .service-box {
             background-color: black;
@@ -106,25 +128,25 @@
             align-items: center;
             border-radius: 1rem;
 
-            height: 25vh;
-            width: 45vw;
+            height: 20vh;
+            width: 40vw;
 
         }
         .services-ico {
             margin: 1rem;
-            height: 25vh;
+            height: 15vh;
             width: auto;
         }
         .service-text {
             width: 30vh;
-            margin-left: 3rem;
+            margin-left: 1rem;
 
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 1.5rem;
-            color: lawngreen;
+            color: white;
         }
         #contact {
-            background-color: #f5f3f4;
+            background-color: #6c757d;
             height: 70vh;
             width: 100%;
         }
@@ -134,7 +156,7 @@
             height: 30vh;
             width: 100%;
         }
-        a:hover {
+        .shortcut:hover {
             color: darkgray;
         }
     </style>
@@ -147,31 +169,41 @@
             </a>
             <ul class="nav-list">
                 <li>
-                    <a href="#head">Inicio</a>
+                    <a class="shortcut" href="#head">Inicio</a>
                 </li>
                 <li>
-                    <a href="#gallery">Galería</a>
+                    <a class="shortcut" href="#gallery">Galería</a>
                 </li>
                 <li>
-                    <a href="#services">Servicios</a>
+                    <a class="shortcut" href="#services">Servicios</a>
                 </li>
                 <li>
-                    <a href="#contact">Contacto</a>
+                    <a class="shortcut" href="#contact">Contacto</a>
                 </li>
             </ul>
         </nav>    
         <section class="home">
-            Sesión de foto-retratos ambientados con producción y edición
+            HUGO MATEO BERTONE
         </section>
+        
     </header>
     <div class="container" id="gallery">
-        Galería
-            Modelos
+        <div>
+            <a href="">
+                <img class="models" src="images/models/JandryFrancoCantos/el vago piola.jpg" alt="">
+                Jandry Franco Cantos
+            </a>
+
+        </div>
+        <div>
+            <a href="">
+                <img class="models" src="images/tamlo01.jpg" alt="">
+                Tamara Lopez
+            </a>
+
+        </div>
     </div>
     <div class="container" id="services">
-        <div>
-            Servicios
-        </div>
         <div class="service-box">
             <div>
                 <a href="">
