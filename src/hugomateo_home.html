@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Mateo</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 100%;
+            margin: 0;
+        }
+        .header {
+            margin: 0;
+
+            background-image: url(images/DSC06175.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+        }
+        .nav-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+            height: 15vh;
+            width: 100%;
+            background-color: rgb(255, 255, 255, 0.1);
+
+            position: fixed;
+            top: 0%;
+        }
+        .nav-logo {
+            margin: 5px;
+            height: 40px;
+            width: 40px;
+            
+        }
+        .nav-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            
+            margin: 5px;
+            width: 100%;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            list-style: none;
+        }
+        a {
+            text-decoration-style: none;
+            text-decoration-line: none;
+            color: black;
+        }
+       .home {
+            display: grid;
+            place-items: center;
+
+            height: 100vh;
+            width: 100%;
+
+            font-family: "Josefin Sans", Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-shadow: darkslategrey;
+            color: white;
+        }
+        .slider {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        #gallery {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+            height: 85vh;
+            width: 100%;
+            padding-top: 15vh;
+        }
+        .models {
+            height: 50vh;
+            width: auto;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            height: 100vh;
+            width: 100%;
+        }
+        #services {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            place-items: center;
+
+            background-color: #ced4da;
+            height: 85vh;
+            width: 100%;
+            padding-top: 15vh;
+        }
+        .service-box {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+
+            height: 20vh;
+            width: 40vw;
+
+        }
+        .services-ico {
+            margin: 1rem;
+            height: 15vh;
+            width: auto;
+        }
+        .service-text {
+            width: 30vh;
+            margin-left: 1rem;
+
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.5rem;
+            color: white;
+        }
+        #contact {
+            background-color: #6c757d;
+            height: 55vh;
+            width: 100%;
+            padding-top: 15vh;
+            background-image: url(/images/8tBO4j.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            font-size: 2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: blanchedalmond;
+            font-weight: 900;
+
+        }
+        .contact-text {
+
+        }
+        footer {
+            background-color: #161a1d;
+            height: 30vh;
+            width: 100%;
+        }
+        .shortcut:hover {
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="head">
+        <nav class="nav-container">
+            <a href="hugomateo_home.html">
+                <img class="nav-logo" src="images/logo_hm1.png" alt="logo">
+            </a>
+            <ul class="nav-list">
+                <li>
+                    <a class="shortcut" href="#head">Inicio</a>
+                </li>
+                <li>
+                    <a class="shortcut" href="#gallery">Galería</a>
+                </li>
+                <li>
+                    <a class="shortcut" href="#services">Servicios</a>
+                </li>
+                <li>
+                    <a class="shortcut" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>    
+        <section class="home">
+            HUGO MATEO BERTONE
+        </section>
+        
+    </header>
+    <div class="container" id="gallery">
+        <div>
+            <a href="">
+                <img class="models" src="images/models/JandryFrancoCantos/el vago piola.jpg" alt="">
+            </a>
+            Ellos
+        </div>
+        <div>
+            <a href="">
+                <img class="models" src="images/tamlo01.jpg" alt="">
+            </a>
+            Ellas
+        </div>
+        <div>
+            <a href="">
+                <img class="models" src="images/tamlo01.jpg" alt="">
+            </a>
+            Marcas
+        </div>
+    </div>
+    <div class="container" id="services">
+        <div class="service-box">
+            <div>
+                <a href="">
+                    <i>
+                        <img class="services-ico" src="images/camera_icon.png" alt="">
+                    </i>
+                </a>
+            </div>
+            <div class="service-text">
+                Emprendimientos
+            </div>
+        </div>
+        <div class="service-box">
+            <div>
+                <a href="">
+                    <i>
+                        <img class="services-ico" src="images/video_icon.png" alt="">
+                    </i>
+                </a>
+            </div>
+            <div class="service-text">
+                Marcas
+            </div>
+        </div>
+        <div class="service-box">
+            <div>
+                <a href="">
+                    <i>
+                        <img class="services-ico" src="images/video_icon.png" alt="">
+                    </i>
+                </a>
+            </div>
+            <div class="service-text">
+                Eventos
+            </div>
+        </div>
+        <div class="service-box">
+            <div>
+                <a href="">
+                    <i>
+                        <img class="services-ico" src="images/video_icon.png" alt="">
+                    </i>
+                </a>
+            </div>
+            <div class="service-text">
+                Particulares
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <img src="images/ig_white-logo.png" alt="logo instagram">
+        SÍGUEME EN
+        INSTAGRAM
+        <div class="contac-text">
+            #hugomateobertone
+        </div>
+    </div>
+    <footer class="footer"> 
+        Envíame un WPP
+    </footer>
+
+</body>
+</html>
