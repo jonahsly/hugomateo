@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-header {
@@ -34,6 +35,27 @@
   width: 40px;
 }
 
+.App-header-nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+  margin: 5px;
+  width: 100%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration-style: none;
+  text-decoration-line: none;
+  color: black;
+}
+
+.Nav-list-item:hover {
+  color: darkgray;
+}
 /**@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -64,4 +86,15 @@
   text-transform: uppercase;
   text-shadow: darkslategrey;
   color: white;
+}
+
+.App-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  height: 85vh;
+  width: 100%;
+  padding-top: 15vh;
 }
