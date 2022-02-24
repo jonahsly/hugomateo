@@ -12,6 +12,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  background-image: url(/images/DSC06175.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
 }
 
 .App-header-nav {
@@ -40,7 +47,7 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   
-  margin: 5px;
+  margin: 0px;
   width: 100%;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -97,4 +104,53 @@
   height: 85vh;
   width: 100%;
   padding-top: 15vh;
+}
+
+.App-services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  place-items: center;
+
+  background-color: #ced4da;
+  height: 85vh;
+  width: 100%;
+  padding-top: 15vh;
+}
+
+.App-contact {
+  background-color: #6c757d;
+  height: 55vh;
+  width: 100%;
+  padding-top: 15vh;
+  background-image: url(/images/8tBO4j.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: blanchedalmond;
+  font-weight: 900;
+}
+
+.App-footer {
+  background-color: #161a1d;
+  height: 30vh;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }

@@ -1,6 +1,7 @@
 import logo from './logo-hm640.png';
-import './App.css';
-import {Link} from 'react-scroll';
+import './styles.css';
+import { Link } from 'react-scroll';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 function App() {
   return (
@@ -24,9 +25,31 @@ function App() {
             HUGO MATEO BERTONE
         </section>
       </header>
-      <div className="App-gallery" id="gallery">
+      <div className="App-gallery" id='gallery'>
+        <Swiper className='swiper'
+          spaceBetween={50}
+          slidesPerView={3}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide className='swiper-slide'>
+          <img src={logo} />
+          Slide 1</SwiperSlide>
+          <SwiperSlide className='swiper-slide'>Slide 2</SwiperSlide>
+          <SwiperSlide className='swiper-slide'>Slide 3</SwiperSlide>
+          <SwiperSlide className='swiper-slide'>Slide 4</SwiperSlide>
+          ...
+        </Swiper>
+      </div>
+      <div className="App-services" id='services'>
+
+      </div>
+      <div className="App-contact" id='contact'>
         
       </div>
+      <footer class="App-footer" id='footer'> 
+          Envíame un WPP
+      </footer>
     </div>
   );
 }
