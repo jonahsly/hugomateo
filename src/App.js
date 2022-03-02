@@ -1,9 +1,14 @@
 import logo from './logo-hm640.png'
 import './styles.css';
+import './examples.css';
+import './fullpage.css';
 import { Link } from 'react-scroll';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 function App() {
+
+      /** Versión alfa base **/
+
   return (
     <div className="App">
       <header className="App-header" id='head'>
