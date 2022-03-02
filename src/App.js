@@ -1,4 +1,4 @@
-import logo from './logo-hm640.png';
+import logo from './logo-hm640.png'
 import './styles.css';
 import { Link } from 'react-scroll';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header" id='head'>
-
         <nav className="App-header-nav">
           <img className="App-header-nav-logo" src={logo} alt="logo" />
           <ul className="App-header-nav-list">
@@ -22,24 +21,12 @@ function App() {
           </ul>
         </nav>    
         <section className="App-header-sec">
-            HUGO MATEO BERTONE
+            <h1>HUGO MATEO BERTONE</h1>
         </section>
       </header>
+      
       <div className="App-gallery" id='gallery'>
-        <Swiper className='swiper'
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide className='swiper-slide'>
-          <img src={logo} />
-          Slide 1</SwiperSlide>
-          <SwiperSlide className='swiper-slide'>Slide 2</SwiperSlide>
-          <SwiperSlide className='swiper-slide'>Slide 3</SwiperSlide>
-          <SwiperSlide className='swiper-slide'>Slide 4</SwiperSlide>
-          ...
-        </Swiper>
+        
       </div>
       <div className="App-services" id='services'>
 
@@ -47,9 +34,13 @@ function App() {
       <div className="App-contact" id='contact'>
         
       </div>
-      <footer class="App-footer" id='footer'> 
+      <footer className="App-footer" id='footer'> 
           Envíame un WPP
       </footer>
+      <div className="section" id="section1">
+        <div className="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+        <div className="slide" id="slide2"><h1>Totally customizable</h1></div>
+      </div>
     </div>
   );
 }
