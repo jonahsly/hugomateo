@@ -38,6 +38,17 @@ html.fp-enabled,
     -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
     transition: all 0.3s ease-out;
 }
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
 .fp-slidesContainer {
     float: left;
     position: relative;
@@ -69,6 +80,10 @@ html.fp-enabled,
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: hidden;
+    position: relative;
 }
 .fp-scroller{
     overflow: hidden;
@@ -124,6 +139,9 @@ html.fp-enabled,
     height: 13px;
     margin: 7px;
     position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
@@ -194,6 +212,12 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip.fp-left {
     left: 20px;
 }
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
+}
+
 .fp-responsive .fp-auto-height-responsive.fp-section,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
