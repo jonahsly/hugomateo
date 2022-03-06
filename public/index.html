@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo-hm120.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-hm120" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Hugo Mateo Bertone</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="text/javascript" src="/src/fullpage.js"></script>
-    <script type="text/javascript">
-      var myFullpage = new fullpage('#fullpage', {
-        verticalCentered: false,
+<head>
+	<meta charset="utf-8" />
+	<title>Hugo Mateo Bertone</title>
+    <link rel="icon" type="image/png" href="/src/logo-hm120.png" />
+	<meta name="description" content="Hugo Mateo's portfolio" />
+	<meta name="keywords"  content="fotografía,fotógrafo" />
+	<meta name="Resource-type" content="Document" />
 
-        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-        css3:false
-      });
-    </script>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+	<link rel="stylesheet" type="text/css" href="./index-styles.css" />
+</head>
+<body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+	<div id="header">
+		<img className="logo" src="/src/logo-hm120.png" alt="logo" />
+		<ul id="menu">
+			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+			<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+		</ul>
+	</div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+	<div id="fullpage">
+		<div class="section " id="section0"><h1>HUGO MATEO BERTONE</h1></div>
+		<div class="section " id="section1">
+			<div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+			<div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+		</div>
+		<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+		<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+	</div>   
+	<footer className="App-footer" id='footer'> 
+		Envíame un WPP
+	</footer>
+	
+	<script type="text/javascript" src="./index-java.js"></script>
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			verticalCentered: false,
 
+			//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+			css3:false
+		});
+	</script>
+</body>
 </html>

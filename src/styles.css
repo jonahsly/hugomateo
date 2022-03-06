@@ -1,4 +1,4 @@
-/**.App {
+.App {
   text-align: center;
   
 }
@@ -13,7 +13,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 
-  background-image: url(https://i.imgur.com/0BIUCJU.jpg?1);
+  background-image: url(/imgs/0BIUCJU.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,22 +78,6 @@
   color: white;
 }
 
-.section{
-  text-align:center;
-}
-#section1{
-  background-size: cover;
-  background-attachment: fixed;
-}
-#slide1{
-  background-image: url(https://i.imgur.com/0BIUCJU.jpg?1);
-  padding: 6% 0 0 0;
-}
-#slide2{
-  background-image: url(https://i.imgur.com/0BIUCJU.jpg?1);
-  padding: 6% 0 0 0;
-}
-
 .App-gallery {
   display: flex;
   align-items: center;
@@ -122,7 +106,7 @@
   height: 55vh;
   width: 100%;
   padding-top: 15vh;
-  background-image: url(/images/8tBO4j.jpg);
+  background-image: url(/imgs/rfpqI3I.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -138,67 +122,3 @@
   height: 30vh;
   width: 100%;
 }
-**/
-/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
-	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
-
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	#section0,
-	#section1,
-	#section2,
-	#section3,
-    #slide1,
-    #slide2{
-		background-size: cover;
-		background-attachment: fixed;
-	}
-
-	/* Defining each sectino background and styles
-	* --------------------------------------- */
-	#section0{
-		background-image: url(/public/backgroung02.jpg);
-	}
-	#section0 h1{
-		top: 50%;
-		transform: translateY(-50%);
-		position: relative;
-	}
-	#section2{
-		background-image: url(/public/backgroung03.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3{
-		background-image: url(/public/backgroung00.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3 h1{
-		color: #000;
-	}
-
-
-	/*Adding background for the slides
-	* --------------------------------------- */
-	#slide1{
-		background-image: url(/public/backgroung00.jpg);
-		padding: 6% 0 0 0;
-	}
-	#slide2{
-		background-image: url(/public/backgroung01.jpg);
-		padding: 6% 0 0 0;
-	}
-
