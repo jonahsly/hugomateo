@@ -1,9 +1,4 @@
-html {
-	scroll-behavior: smooth;
-}
-/* Fixed header and footer.
-* --------------------------------------- */
-#header, #footer{
+#header{
 	position:fixed;
 	height: 100px;
 	display:block;
@@ -13,14 +8,22 @@ html {
 	text-align:center;
 	color: #f2f2f2;
 	padding: 20px 0 0 0;
+	top: 0px;
 }
 
-#header{
-	top:0px;
-}
 #footer{
+	position:fixed;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: rgb(255, 255, 255, 0.1);
+	z-index:9;
+	text-align:center;
+	color: #f2f2f2;
+	padding: 20px 0 0 0;
 	bottom:0px;
 }
+
 .App-header-nav {
 display: flex;
 flex-direction: column;
@@ -36,10 +39,10 @@ position: fixed;
 top: 0%;
 }
 
-.logo {
+#logo {
 	margin: 5px;
-	height: 2rem;
-	width: 2rem;
+	height: 3rem;
+	width: 3rem;
 }
 
 .App-header-nav-list {
@@ -239,7 +242,7 @@ p{
 }
 
 h1{
-	font-size: 5em;
+	font-size: 4em;
 	font-family: arial,helvetica;
 	color: #fff;
 	margin:0;
@@ -265,6 +268,7 @@ h1{
 #slide2{
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 }
 
 /* Defining each sectino background and styles
@@ -302,11 +306,6 @@ h1{
 }
 
 
-/* Bottom menu
-* --------------------------------------- */
-#infoMenu li a {
-	color: #fff;
-}
 
 /* Style for our header texts
 * --------------------------------------- */
@@ -327,16 +326,6 @@ h1{
 	text-align:center;
 }
 
-
-/* Bottom menu
-* --------------------------------------- */
-#infoMenu {
-	bottom: 80px;
-}
-#infoMenu li a {
-	color: #fff;
-	z-index: 999;
-}
 
 /*!
  * fullPage 3.1.2
@@ -565,13 +554,22 @@ h1{
  }
  
  /*Only display content to screen readers*/
- .fp-sr-only{
-	 position: absolute;
-	 width: 1px;
-	 height: 1px;
-	 padding: 0;
-	 overflow: hidden;
-	 clip: rect(0, 0, 0, 0);
-	 white-space: nowrap;
-	 border: 0;
- }
+.fp-sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+#callbacksDiv {
+	font-size:1.2em;
+}
+#callbacksDiv {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: white;
+	text-decoration: underline;

@@ -4,44 +4,77 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Hugo Mateo Bertone</title>
-    <link rel="icon" type="image/png" href="/src/logo-hm120.png" />
+    <link rel="icon" type="image/png" href="logo-hm120.png" />
 	<meta name="description" content="Hugo Mateo's portfolio" />
 	<meta name="keywords"  content="fotografía,fotógrafo" />
 	<meta name="Resource-type" content="Document" />
 
-	<link rel="stylesheet" type="text/css" href="./index-styles.css" />
+	<link rel="stylesheet" type="text/css" href="/src/index.css" />  
+
+    <link rel="stylesheet" type="text/css" href="./fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./examples.css" />
 </head>
 <body>
-
 	<div id="header">
-		<img className="logo" src="/src/logo-hm120.png" alt="logo" />
+		<img src="./logo-hm120.png" alt="logo" id="logo"/>
+		
 		<ul id="menu">
-			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+			<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
 			<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
 			<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+			<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
 		</ul>
 	</div>
 
+	
+	
+
 	<div id="fullpage">
-		<div class="section " id="section0"><h1>HUGO MATEO BERTONE</h1></div>
-		<div class="section " id="section1">
+		<div class="section" id="section0">
+			<h1>HUGO MATEO BERTONE</h1>
+		</div>
+		
+		
+		<div class="section" id="section1">
+			<h1>Hugo mateo bertone</h1>
 			<div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
 			<div class="slide" id="slide2"><h1>Totally customizable</h1></div>
 		</div>
 		<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
 		<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
-	</div>   
+	</div>  
 	<footer className="App-footer" id='footer'> 
 		Envíame un WPP
 	</footer>
 	
-	<script type="text/javascript" src="./index-java.js"></script>
+	<script type="text/javascript" src="/src/index.js"></script>
+
+
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
 			verticalCentered: false,
 
 			//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
 			css3:false
+		});
+	</script>
+	<script type="text/javascript">
+		var deleteLog = false;
+	
+		//fullpage initialisation
+		var myFullpage = new fullpage('#fullpage', {
+			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			menu: '#menu',
+			afterResize: function(width, height){
+				addToLog('afterResize', {
+					width: width,
+					height: height
+				});
+	
+				console.log("afterResize");
+				console.log(params);
+			},
 		});
 	</script>
 </body>
