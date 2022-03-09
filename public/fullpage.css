@@ -41,7 +41,7 @@ html.fp-enabled,
 }
 .fp-slidesContainer {
     float: left;
-    position: relative;
+    position: center;
 }
 .fp-controlArrow {
     -webkit-user-select: none; /* webkit (safari, chrome) browsers */

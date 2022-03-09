@@ -59,22 +59,20 @@ div{
 	text-align:center;
 	place-items: center;
 }
-
+#section0 h1{
+	font-size: 160px;
+	font-weight: 500;
+	font-family: Arial, Helvetica, sans-serif;
+}
 #section0,
 #section1,
 #section2,
 #section3,
 #slide1,
 #slide2,
-#slide3
-{
+#slide3{
 	background-size: cover;
 	background-position: center;
-}
-#section0{
-	text-align: center;
-	place-items: center;
-	font-size: 24px;
 }
 #slide1 {
 	background-image: url(/imgs/0BIUCJU.jpg);
@@ -99,7 +97,7 @@ div{
 	color: #000;
 }
 
-#section h1{
+#section h2{
     font-weight: normal;
     margin:0;
     padding:0;
@@ -107,17 +105,9 @@ div{
 
 	font-size: 5em;
 	font-family: arial,helvetica;
-	color: #fff;
 	margin:0;
 	padding:0;
 }
-
-
-
-
-/*Adding background for the slides
-* --------------------------------------- */
-
 
 
 
