@@ -9,9 +9,63 @@
 	<meta name="description" content="Hugo Mateo's portfolio" />
 	<meta name="keywords"  content="fotografía,fotógrafo" />
 	<meta name="Resource-type" content="Document" />
-
 	<link rel="stylesheet" type="text/css" href="./fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="./examples.css" />
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+
+		.swiper {
+			width: 100%;
+			height: 70%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+		#img1{
+			background-image: url(/imgs/DSC00167-Edit.jpg);
+			height: fit-content;
+		}
+	</style>
 </head>
 <body>
 	<header id="header">
@@ -30,7 +84,33 @@
 			<div class="slide" id="slide3"><h2>Slide 1.3</h2></div>
 		</div>
 		<div class="section" id="section1">
-
+			<div class="slide" id="slide11">
+				<h2>Section 1</h2>
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					  	<div class="swiper-slide" id="img1">
+							<img src="/imgs/DSC00167-Edit.jpg"/>
+							Slide 1
+						</div>
+					 	<div class="swiper-slide">Slide 2
+							<img src="/imgs/DSC00592-Edit.jpg" alt="image">
+					  	</div>
+					  	<div class="swiper-slide">Slide 3
+							<img src="/imgs/DSC00738-Edit.jpg" alt="image">
+						</div>
+						<div class="swiper-slide">Slide 4</div>
+						<div class="swiper-slide">Slide 5</div>
+						<div class="swiper-slide">Slide 6</div>
+						<div class="swiper-slide">Slide 7</div>
+						<div class="swiper-slide">Slide 8</div>
+						<div class="swiper-slide">Slide 9</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="slide" id="slide12"><h2>Slide 1.2</h2></div>
+			<div class="slide" id="slide13"><h2>Slide 1.3</h2></div>
+			
 		</div>
 		<div class="section" id="section2"><h2>Section 3</h2></div>
 		<div class="section" id="section3"><h2>Section 4</h2></div>
@@ -53,9 +133,7 @@
 			});
 		}
 
-		//fullPage.js initialization
 		initialization();
-
 
 		document.querySelector('#moveSectionUp').addEventListener('click', function(e){
 			e.preventDefault();
@@ -139,8 +217,6 @@
 
 		document.querySelector('#undestroy').addEventListener('click', function(e){
 			e.preventDefault();
-
-			//fullPage.js initialization
 			initialization();
 		});
 
@@ -159,5 +235,18 @@
 			fullpage_api.setLockAnchors(false);
 		});
 	</script>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+		  slidesPerView: 4,
+		  spaceBetween: 30,
+		  centeredSlides: true,
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
+		});
+	  </script>
 </body>
 </html>

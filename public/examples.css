@@ -74,19 +74,44 @@ div{
 	background-size: cover;
 	background-position: center;
 }
-#slide1 {
+#slide1{
 	background-image: url(/imgs/0BIUCJU.jpg);
 }
-#slide2 {
+#slide2{
 	background-image: url(/imgs/rfpqI3I.jpg);
 }
-#slide3 {
+#slide3{
 	background-image: url(/imgs/MPEMm7o.jpg);
 }
 
 #section1{
 	background-color: #444;
 }
+
+
+#slide11{
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/imgs/0BIUCJU.jpg);
+	background-position: center;
+}
+#slide12{
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/imgs/rfpqI3I.jpg);
+	background-position: bottom;
+}
+#slide13{
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/imgs/MPEMm7o.jpg);
+	background-position: top;
+}
+
+
 #section2{
 	background-image: url(/imgs/MPEMm7o.jpg);
 }
