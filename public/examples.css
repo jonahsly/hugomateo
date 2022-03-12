@@ -62,7 +62,8 @@ div{
 
 .section{
 	display: flex;
-	align-items: flex-end;
+	flex-direction: row;
+	align-items: flex-start;
 	text-align:center;
 	justify-content: center;
 }
@@ -76,35 +77,33 @@ div{
 }
 
 #section1 {
-	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-
-
 	background-color: #444;
+
 }
 #img1 {
 	background-image: url(/imgs/DSC08601-Edit.jpg);
 	background-size: cover;
 }
-.swiper {
-	place-items: center;
-	width: 500px;
-	height: 600px;
+
+.mySwiper1 {
+	width: 250px;
+	height: 300px;
+}
+.mySwiper2 {
+	width: 250px;
+	height: 300px;
 }
 
 .swiper-slide {
 	background-position: center;
-	background-size: fixed;
+	background-size: cover;
 	width: 300px;
 	height: 300px;
 	text-align: center;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-
 }
 
 .swiper-slide img {
