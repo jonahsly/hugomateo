@@ -60,7 +60,7 @@ div{
 	color: #fff;
 }
 
-.section{
+#section0 {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -75,43 +75,57 @@ div{
 	z-index: 50;
 	position: fixed;
 }
-
 #section1 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	background-color: #444;
 
+	width: 100vw;
+	height: 100vh;
 }
 #img1 {
 	background-image: url(/imgs/DSC08601-Edit.jpg);
 	background-size: cover;
 }
-#container {
-	background-color: aquamarine;
-	height: 30px;
-	width: 30px;
-}
 
 .mySwiper1 {
+	
 	width: 250px;
-	height: 300px;
+	height: 250px;
+	margin: 10px;
+	float: left;
 }
+
 .mySwiper2 {
 	width: 250px;
-	height: 300px;
+	height: 250px;
 }
 
 .swiper-slide {
-	background-position: center;
+	/*background-position: center;
 	background-size: cover;
 	width: 300px;
 	height: 300px;
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow: hidden;*/
+	text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+
+
 }
 
 .swiper-slide img {
