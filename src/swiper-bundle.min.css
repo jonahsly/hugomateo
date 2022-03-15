@@ -55,7 +55,7 @@
     backface-visibility:hidden
 }
 .swiper-3d,.swiper-3d.swiper-css-mode .swiper-wrapper{
-    perspective:300px
+    perspective:1200px
 }
 .swiper-3d .swiper-cube-shadow,
 .swiper-3d .swiper-slide,
